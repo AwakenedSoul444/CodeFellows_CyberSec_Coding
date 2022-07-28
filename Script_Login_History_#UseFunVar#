@@ -1,3 +1,6 @@
 #Write a script to print login history and use a function and variable
 
+
 #!/bin/bash
+$ last-login
+
