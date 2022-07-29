@@ -1,1 +1,12 @@
+##Create 4 directories using arrays
+$ echo "$dirArray=( dir1 dir2 dir3 dir4 )"
+
+for dirName in $( dirArray[@] ); 
+do
+    mkdir -p /home/$dirName
+    mkdir -p /home/$dieName/backups
+    mkdir -p /home/$dirName/scans
+    mkdir -p /home/$dirName/objects
+done
+
 
