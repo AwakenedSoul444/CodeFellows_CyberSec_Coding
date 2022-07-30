@@ -1,0 +1,12 @@
+#! /bin/bash
+end=$((SECONDS+30))
+
+while [ $SECONDS -lt $end ]; do
+   #This command will display processes
+   ps -A
+   #This command will display PID
+    echo "PID of this script: $$"
+    #should kill pid
+    kill <pid>
+    :
+done
