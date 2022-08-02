@@ -1,0 +1,5 @@
+#!/bin/bash
+[ -f /etc/resolv.conf ] && echo "$FILE exist." || echo "$FILE does not exist."
+if [[ $FILE -lt 1 ]]
+touch resolv.conf
+fi
