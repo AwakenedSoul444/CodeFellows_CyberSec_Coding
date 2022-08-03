@@ -1,0 +1,2 @@
+sudo lshw
+# This will out put sysinfo such Network details, CPU, USB, RAM, display, and more
