@@ -1,0 +1,11 @@
+@echo off
+
+set 1=<days>
+
+set"source=C:\<Users\j.thompson\Desktop\My Project Files>"
+
+set "destination=D:\<Users\j.thompson\Desktop\Jbackup>"
+
+robocopy "source" "destination" "filename with extenstion" /z
+
+exit /b
