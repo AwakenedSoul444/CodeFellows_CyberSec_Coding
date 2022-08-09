@@ -2,8 +2,11 @@
 
 
 #!/bin/bash
-Faults="Bad Attempts"
-echo "${Faults}" if last -gt 0
+last
+History="Sequence of SysLogs should be more than"
+echo "${History}"
+One=1
+echo "${One}"
 
 
 
