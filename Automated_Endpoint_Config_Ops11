@@ -1,0 +1,7 @@
+Your script should perform the following:
+Enable File and Printer Sharing
+Allow ICMP traffic
+Enable Remote management
+Remove bloatware
+Enable Hyper-V
+Disable SMBv1, an insecure protocol
