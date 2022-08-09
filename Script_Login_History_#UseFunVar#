@@ -2,7 +2,7 @@
 
 
 #!/bin/bash
-// This will allow us to get the last login
+#This will allow us to get the last login
 function wpsnipp_get_last_login($user_id,$prev=null){
   $last_login = get_user_meta($user_id);
   $time = current_time( 'timestamp' );
@@ -17,7 +17,7 @@ function wpsnipp_get_last_login($user_id,$prev=null){
   return $last_login;
 }
 
-// This will show us the date and time of the last login
+#This will show us the date and time of the last login
  global $current_user;
   get_currentuserinfo();
   echo '<p>Previous: Login date: ' . date("Y-m-d h:m:s", wpsnipp_get_last_login($current_user->ID,true)) . '</p>';
