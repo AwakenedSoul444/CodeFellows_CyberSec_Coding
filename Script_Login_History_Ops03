@@ -1,5 +1,8 @@
 #Write a script to print login history and use a function and variable
 
+touch logins.sh
+nano logins.sh
+#then we can enter our script as follows:
 
 #!/bin/bash
 last
