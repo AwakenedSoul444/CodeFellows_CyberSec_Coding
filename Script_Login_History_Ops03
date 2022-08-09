@@ -2,25 +2,8 @@
 
 
 #!/bin/bash
-#This will allow us to get the last login
-function wpsnipp_get_last_login($user_id,$prev=null){
-  $last_login = get_user_meta($user_id);
-  $time = current_time( 'timestamp' );
-  if(isset($last_login['_last_login_prev'][0]) && $prev){
-          $last_login = get_user_meta($user_id, '_last_login_prev', 'true' );
-  }else if(isset($last_login['_last_login'][0])){
-          $last_login = get_user_meta($user_id, '_last_login', 'true' );
-  }else{
-    update_usermeta( $user_id, '_last_login', $time );
-    $last_login = $last_login['_last_login'][0];
-  }
-  return $last_login;
-}
+Faults="Bad Attempts"
+echo "${Faults}" if last -gt 0
 
-#This will show us the date and time of the last login
- global $current_user;
-  get_currentuserinfo();
-  echo '<p>Previous: Login date: ' . date("Y-m-d h:m:s", wpsnipp_get_last_login($current_user->ID,true)) . '</p>';
-  echo '<p>Current: Login date: ' . date("Y-m-d h:m:s", wpsnipp_get_last_login($current_user->ID)) . '</p>';
-#End of notes
+
 
