@@ -7,5 +7,9 @@
 
 
 # Main
-
+touch helloworld.sh
+sudo nano helloworld.sh
+#Here we enter whatever script such as // #!/bin/bash  echo "I am working perfectly"//
+bash helloworld.sh
+#Here we should now see "I am working perfectly"
 # End
