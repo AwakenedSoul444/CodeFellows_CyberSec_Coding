@@ -22,5 +22,5 @@ function wpsnipp_get_last_login($user_id,$prev=null){
   get_currentuserinfo();
   echo '<p>Previous: Login date: ' . date("Y-m-d h:m:s", wpsnipp_get_last_login($current_user->ID,true)) . '</p>';
   echo '<p>Current: Login date: ' . date("Y-m-d h:m:s", wpsnipp_get_last_login($current_user->ID)) . '</p>';
-// End of notes
+#End of notes
 
