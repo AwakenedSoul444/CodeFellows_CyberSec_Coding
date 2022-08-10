@@ -1,0 +1,8 @@
+#This script will print Ipconfig to a new text file, print on screen the specific information IPV4
+#Then remove the txt and confirm deletion by checking directory
+
+cd C:\Users\orteg\Documents\
+$Receive_Network_Data = ipconfig /all > "network_status.txt"
+Select-String -Path "network_status.txt" -Pattern "Ipv4 Address"
+Remove-Item -Path "network_status.txt"
+Get-ChildItem
