@@ -1,0 +1,18 @@
+#Creating a bash script to output whois dig host nslookup
+
+
+touch DNSNFO.sh
+nano DNSNFO.sh
+#then we can enter our script as follows:
+
+#!/bin/bash
+whois
+dig
+host
+nslookup
+
+echo "
+History="Sequence of SysLogs should be more than"
+echo "${History}"
+One=1
+echo "${One}"
