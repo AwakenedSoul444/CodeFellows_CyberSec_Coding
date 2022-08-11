@@ -6,13 +6,11 @@ nano DNSNFO.sh
 #then we can enter our script as follows:
 
 #!/bin/bash
-whois
-dig
-host
-nslookup
+whois codefellows.org
+dig codefellows.org
+host codefellows.org
+nslookup codefellows.org
 
-echo "
-History="Sequence of SysLogs should be more than"
-echo "${History}"
-One=1
-echo "${One}"
+IPNFO="The resulting information was pulled from Codefellows.org"
+echo "${IPNFO}"
+
