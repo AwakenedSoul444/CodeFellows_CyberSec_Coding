@@ -1,1 +1,17 @@
+Get-Process | Sort-Object CPU -Desc | Select-Object ID, Name, CPU, @{Name='ThreadCount';Expression ={$_.Threads.Count}} -First 1000
 
+Get-Process -IncludeUserName | Sort-Object CPU -desc | Select -first 5| Select ProcessName,ID,CPU,UserName,Description | Format-Table -AutoSize
+
+Invoke-Item "C:\Program Files\Internet Explorer\iexplore.exe" | $IE=new-object -com internetexplorer.application
+$IE.navigate2("https://owasp.org/www-project-top-ten/")
+$IE.visible=$true
+
+get-process iexplore | stop-process
+
+Stop-Process
+    [-Id] <Int32[]>
+    [-PassThru]
+    [-Force]
+    [-WhatIf]
+    [-Confirm]
+    [<CommonParameters>]
