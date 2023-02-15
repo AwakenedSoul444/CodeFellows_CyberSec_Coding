@@ -10,4 +10,4 @@ than if we were right in front of the machine we are acccessing. It makes user a
 I would work on scripts in bash, powershell, and python to be honest. I really enjoyed them all regardless of the challenge it brought. I plan
 on learning more about these languages for automation.
 I would like to seamlessly create multiple SSH instances and be able to create VPNs as well to connect across all OS platforms. Improving language understanding
-will also improve the rate at which I can create scripts, so I'll be working on this for sure.
+will also improve the rate at which I can create scripts, so I'll be working on this.
